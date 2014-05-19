@@ -64,7 +64,9 @@ with all the records in order (by ASCII values).
 This command will evaluate whether the sorting was done correctly. In my experience, this will always say
 it was not sorted correctly. There is some oddity when valsort reads a result from a Go program though.
 Of course I take full responsibility for not being able to discover the reason, but I was able to prove
-that my heapsort.go does sort correctly with the following commands.
+that my heapsort.go does sort correctly with the following commands. (The easiest way to see that the
+outputs are identical is to use the command "gensort -a 10 sortThis", that way you can see that both
+goOutput and goOutput2 are identical. The only difference is that valsort correctly evaluates the latter)
 
 > g++ writeAgain.cc
 This will compile writeAgain.cc and make an executable "a", that will write a copy of a file.
