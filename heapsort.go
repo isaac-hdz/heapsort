@@ -246,7 +246,7 @@ func main() {
 	}
 
 	// create output
-	out, e2 := os.Create("goOutputHeap")
+	out, e2 := os.Create("goOutput")
 	check(e2)
 	// place the root in the output and remove the root
 	// the file will then have all values in order

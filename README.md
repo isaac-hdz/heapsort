@@ -60,7 +60,7 @@ This command will create the records for sorting. The -a is necessary to create 
 This command will take sortThis, put all the records in a heap and then output a file, named "goOutput",  
 with all the records in order (by ASCII values).
 
-> valsort output
+> valsort goOutput
 This command will evaluate whether the sorting was done correctly. In my experience, this will always say
 it was not sorted correctly. There is some oddity when valsort reads a result from a Go program though.
 Of course I take full responsibility for not being able to discover the reason, but I was able to prove
